@@ -1,0 +1,40 @@
+.sidebar {
+  display: block;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#242529;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  
+    
+    h4 , p,i{
+      color: white;
+    }
+    .image{
+    width: 80px;
+     
+      border-radius: 60px ;
+    }
+    .btx{
+      color: white;
+      border-color: white;
+      border-radius: 18px;
+      
+    }
+   .footer{
+    margin-top:  150px;
+   }
+   .dl{
+    border-radius: 22px;
+    border-color: white;
+    margin-left: 10px ;
+    margin-right: 10px;
+    margin-top: -5px;
+    
+   }
+  }
+ 

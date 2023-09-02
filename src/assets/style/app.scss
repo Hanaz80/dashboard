@@ -1,0 +1,20 @@
+.navs{
+    .btc{
+        background-color: #fdf379;;
+        
+        border-radius: 12px;
+    }
+    .btb{
+        border-radius: 14px;
+       border-color: #4d4f56;
+      }
+      .inputx{
+        display: block;
+        border: none;
+      }
+      ::placeholder {
+        color: #5e6065;
+        opacity: 1; /* Firefox */
+      }
+}
+

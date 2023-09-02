@@ -1,0 +1,132 @@
+.container{
+    
+    height: 100%;
+    padding-left: 200px;
+    margin-bottom: auto;
+    
+    .cards{
+        margin: auto;
+        padding: auto;
+    }
+    .card{
+        border-radius: 14px;
+        width: 320px;
+        display: block;
+        height: 320px;
+    }
+    .card1{
+    
+     background-color: hsl(54.1, 100%, 73.9%);
+    }
+    .card2{
+     background-color: #35363d;
+     .bt{
+        border-radius: 20px;
+        border-color: #aea8a5;
+       
+     }
+     button{
+        color: #dcdcdd;
+     }
+     .btn2{
+        text-align: center;
+        margin-top: 150px;
+
+     }
+     .bt2{
+        border-radius: 10px;
+        border-color: #aea8a5;
+        width: 227px;
+        height: 47px;
+        
+     }
+     p{
+        color:hsl(54.1, 100%, 73.9%) ;
+     }
+    }
+    .card3{
+        background-color: hsl(240, 1.4%, 86.5%);
+        i{
+            font-size:40px;
+        }
+       
+        
+    }
+    .card4{
+        background-color: hsl(232.5, 6.8%, 23.1%);
+        i{
+            color: hsl(54.1, 100%, 73.9%);
+            border-radius: 5px;
+            padding: 5px;
+            background-color: rgb(68, 68, 70);
+        }
+        h5{
+            color: white;
+            margin-top: 4px;
+            margin-left: 9px;
+        }
+        a,p{
+            text-decoration: none;
+            color: rgb(91, 91, 93);
+        }
+        h2{
+            color: white;
+        }
+
+    }
+    .card5{
+        background-color: #aaa3a2;
+        button{
+            background-color: #fef179;
+            border-radius: 12px;
+        }
+        .mt{
+            margin-top: 224px; 
+            text-align: center;
+        }
+    }
+    .card6{
+        background-color: hsl(232.5, 6.8%, 23.1%);
+        h5{
+            color: white;
+        }
+    }
+    .mm{
+        margin-left: 65px;
+       
+    }
+    #cd3{
+        margin-top: 30px;
+        text-align: center;
+        width: 50px;
+        border-radius: 15px !important;
+        margin: 4px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        
+    }
+    .cd2{
+        background-color:hsl(54.1, 100%, 73.9%); 
+        
+        
+    }
+    a{
+        text-decoration: none;
+        color: hsl(54.4, 35.9%, 53.5%);
+        
+    }
+    img{
+        // margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .ft1{
+        margin-bottom:-24px ;
+    }
+    .ft2{
+        margin-top: -12px;
+    }
+    .p2{
+        margin-top: -5px;
+    }
+    
+}
