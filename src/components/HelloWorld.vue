@@ -1,14 +1,14 @@
 <template>
-  <div >
-  <div class="navs  ">
-    <nav class="navbar navbar-sticky navbar-expand-lg navbar-dark bg-dark">
+  <div class="px-5" >
+  <div class="navs pt-4 ">
+    <nav class="navbar navbar-sticky navbar-expand-lg ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Statistics</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="d-flex">
-      <button class=" btn bg-dark ">
+      <button class=" btn  ">
       <i class="fa fa-search" aria-hidden="true" style="color:white"></i>
       </button>
       <input class="form-control me-2 bg-dark inputx" type="search" placeholder="Search somthing ..." aria-label="Search" >

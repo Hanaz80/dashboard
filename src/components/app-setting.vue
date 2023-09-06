@@ -1,7 +1,7 @@
 
 <template>
-    <div class="setting col-md-10 ms-auto">
-        <div class="row mt-5 mb-5  g-4">
+    <div class=" col-md-10 ms-auto">
+        <div class=" setting row mt-5 mb-5   g-4">
   <div class="col">
     <div class="card">
       <div class="card-body text-center">
@@ -35,7 +35,27 @@
     </div>
   </div>
 </div>
-<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
     </div>
 </template>
 <script setup>

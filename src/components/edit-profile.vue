@@ -1,7 +1,8 @@
 <template>
   <div class="col-md-10 ms-auto">
-    <div class="input-group mb-3">
-        <p class="me-2" style="color:white">username</p>
+  <div class=" mt-5  edit w-25 " >
+    <label class="me-2" style="color:white">Username</label>
+    <div class="input-group mb-3 ">
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 
@@ -15,11 +16,29 @@
   <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 </div>
 
-<div>
-    <button style="color:white">Change </button>
+<div class="text-center">
+    <button class="btn " style="background-color:hsl(54.1, 100%, 73.9%)">Change</button>
 </div>
-  </div>  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+  </div>  
+</div>
 </template>
 <script setup>
 </script>

@@ -1,6 +1,6 @@
 <template>
-   <div  class="container-fluid row bg-dark  ">
-        <hello-world  class="col-10 ms-auto" />
+   <div  class="container-fluid">
+        <hello-world  class="col-md-10 ms-auto" />
        <appSlidebar  class="col-2 "/>
         <slot/>
     </div>

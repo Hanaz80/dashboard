@@ -22,3 +22,34 @@
 </template>
 <script setup>
 </script>
+<!-- <template>
+  <div>
+  <button class="btn btn-primary">hello </button>
+  <button  @click="toggleTheme" aria-label="Toggle themes" style="color:white">
+  <span v-if="this.theme == 'darkMode'"> Light</span>
+  <span v-else> Dark</span>     
+  hhhhhhhhhhhhhhhhhhhhh
+</button>
+</div>
+</template>
+
+<script>
+export default {
+  data() {
+      return {
+          theme: '' //When this property is empty, the theme is set to the default theme i.e. light mode.
+      };
+  },
+
+  mounted() {
+      let localTheme = localStorage.getItem('theme'); //gets stored theme value if any
+      document.documentElement.setAttribute('data-theme', localTheme); // updates the data-theme attribute
+  },
+
+  toggleTheme() {
+              this.theme = this.theme == 'darkMode' ? '' : 'darkMode'; //toggles theme value
+              document.documentElement.setAttribute('data-theme', this.theme); // updates the data-theme attribute
+              localStorage.setItem('theme', this.theme); // stores theme value in local storage
+  }
+}
+</script> -->

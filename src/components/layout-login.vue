@@ -1,8 +1,9 @@
 <template>
-  <div>
-    <h1>dddddd</h1>
-  </div>  
+  <div class="container " >
+   <loginPage/>
+  </div>
+
 </template>
-<script setup></script>
-
-
+<script setup>
+import loginPage from './login-page.vue';
+</script>

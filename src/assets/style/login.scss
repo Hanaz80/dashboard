@@ -1,16 +1,17 @@
-.container{
-    
-   
-    .login{
-        width: 400px;
-        margin: auto;
-        padding: auto;
-        padding: 20px;
-        background-color:  #979493;
-        border-radius: 9px;
-        button{
-            background-color: hsl(54.1, 100%, 73.9%);
-            margin-bottom: 10px;
-           }
-    }
+.login{
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 28px;
+    border:1px groove ;
+     width: 30%;
+     background-color: #35363d;
+     button{
+        background-color: hsl(54.1, 100%, 73.9%);
+     }
+     a{
+      text-decoration: none;
+      color: hsl(54.1, 100%, 73.9%);;
+     }
+     
+
 }

@@ -1,0 +1,48 @@
+$dark-color: #242529;;
+$light-color: #eee;
+
+body.dark-mode {
+  background-color: $dark-color;
+  color: $light-color;
+  a {
+    color: $light-color;
+  }
+  .sidebar{
+    background-color: $dark-color;
+    button{
+      color: #eee !important;
+    }
+    i{
+      color: #eee;
+    }
+  }
+  
+
+}
+
+body.light-mode {
+  background-color: $light-color;
+  color: $dark-color;
+  a {
+    color: $dark-color;
+  }
+  .container-fluid{
+    background-color: #eee;
+  }
+  .sidebar{
+  background-color: $light-color;
+  button , i ,h4,p{
+    color: $dark-color !important;
+  }
+  
+  
+
+  }
+  svg{
+    color: $dark-color !important;
+  }
+//   button {
+//     background-color: $dark-color;
+//     color: $light-color;
+//   }
+}

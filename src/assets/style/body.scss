@@ -1,21 +1,47 @@
-.container{
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+}
+
     
+    // .af::after{
+    //     content: "|";
+       
+    //     height: 50px;
+    // }
+.bf{
+    border-left: 1px solid rgb(193, 192, 192);
+    padding-left:12px ;
+    height: 45px;
+    margin-top: -5px;
+}
+.body{
+   
     height: 100%;
-    padding-left: 200px;
+    // padding:60px ;
     margin-bottom: auto;
+    // margin-top: -30px;
+      #myChart{
+    height: 200px !important;
+    // width: 200px !important;
+      }
     
-    .cards{
-        margin: auto;
-        padding: auto;
-    }
+    
     .card{
-        border-radius: 14px;
+        border-radius: 28px;
         width: 320px;
         display: block;
         height: 320px;
+        margin-left: -5px;
+        
+    }
+    .card-body{
+        padding: 25px !important;
     }
     .card1{
-    
+    a{
+        color: #35363d;
+    }
      background-color: hsl(54.1, 100%, 73.9%);
     }
     .card2{
@@ -79,6 +105,7 @@
         button{
             background-color: #fef179;
             border-radius: 12px;
+            
         }
         .mt{
             margin-top: 224px; 
@@ -91,22 +118,24 @@
             color: white;
         }
     }
-    .mm{
-        margin-left: 65px;
-       
-    }
+    
     #cd3{
         margin-top: 30px;
         text-align: center;
-        width: 50px;
+        width: 56px;
         border-radius: 15px !important;
         margin: 4px;
         margin-bottom: 40px;
         margin-top: 30px;
         
     }
+    .cd3{
+        border:1px solid #35363d;
+
+    }
     .cd2{
         background-color:hsl(54.1, 100%, 73.9%); 
+        
         
         
     }
@@ -128,5 +157,7 @@
     .p2{
         margin-top: -5px;
     }
+   
+    
     
 }
