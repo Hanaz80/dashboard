@@ -45,7 +45,9 @@ body::-webkit-scrollbar {
      background-color: hsl(54.1, 100%, 73.9%);
     }
     .card2{
-     background-color: #35363d;
+    //  background-color: #35363d;
+    
+    background-image: url(https://img.freepik.com/free-vector/realistic-black-background-with-wavy-lines_23-2149164545.jpg?w=996&t=st=1694165435~exp=1694166035~hmac=6273d2ac20a82866f3451c2cdae6c8fcaff0f765968cdd1455f113af35af25b8);
      .bt{
         border-radius: 20px;
         border-color: #aea8a5;
@@ -102,6 +104,7 @@ body::-webkit-scrollbar {
     }
     .card5{
         background-color: #aaa3a2;
+        // background-image: url(https://img.freepik.com/free-photo/young-attractive-woman-smiling-feeling-healthy-hair-flying-wind_176420-37515.jpg?w=996&t=st=1694165955~exp=1694166555~hmac=afcaf0a6aba27f68721a93e480d3d08de628f8a271d07bc19b5311f57f2374a7);
         button{
             background-color: #fef179;
             border-radius: 12px;

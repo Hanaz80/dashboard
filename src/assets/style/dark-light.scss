@@ -1,11 +1,12 @@
 $dark-color: #242529;;
 $light-color: #eee;
 
-body.dark-mode {
+.dark-mode {
   background-color: $dark-color;
   color: $light-color;
   a {
     color: $light-color;
+    text-decoration: none;
   }
   .sidebar{
     background-color: $dark-color;
@@ -15,16 +16,21 @@ body.dark-mode {
     i{
       color: #eee;
     }
+    
   }
+  
+  
   
 
 }
 
-body.light-mode {
+.light-mode {
   background-color: $light-color;
   color: $dark-color;
   a {
     color: $dark-color;
+    text-decoration: none;
+
   }
   .container-fluid{
     background-color: #eee;
@@ -41,8 +47,11 @@ body.light-mode {
   svg{
     color: $dark-color !important;
   }
-//   button {
-//     background-color: $dark-color;
-//     color: $light-color;
-//   }
+  .navs{
+    input{
+      background-color: $light-color !important;
+
+    }
+  }
+  
 }

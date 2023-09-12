@@ -1,6 +1,7 @@
 <template>
-   <div  class="container-fluid">
-        <hello-world  class="col-md-10 ms-auto" />
+   <div class="container-fluid" :class="$store.state.classDark">
+      
+    <hello-world  class="col-md-10 ms-auto" />
        <appSlidebar  class="col-2 "/>
         <slot/>
     </div>
@@ -8,5 +9,7 @@
 <script setup>
 import appSlidebar from './app-slidebar.vue';
 import HelloWorld from './HelloWorld.vue';
+
+
 
 </script>

@@ -1,7 +1,7 @@
 <template >
     <div class="activity col-md-10 ms-auto">
 
-<table class="table mt-4  table-dark">
+<table class="table mt-4 table-dark ">
     <thead >
         <tr >
          <th scope="col">id</th>
@@ -36,27 +36,38 @@
 </div>    
 </template>
 <script setup>
-import axios from 'axios';
+import { useStore } from 'vuex'
+const store = useStore()
+// import axios from 'axios';
 import { $ref } from "vue/macros";
 let users = $ref({}) 
-function getUser(){
-   try{
-    axios.get("http://localhost:8080/jsonusers/index.json",{
-    headers: {
-    'Content-Type': 'application/json'
-    }
-  })
-   .then(function (response) {
-    console.log(response.data);
-    users = response.data;
+// function getUser(){
+//    try{
+//     axios.get("http://localhost:8080/jsonusers/index.json" ,{
+//     headers: {
+//     'Content-Type': 'application/json'
+//     }
+//   })
+//    .then(function (response) {
+//     console.log(response.data);
+//     users = response.data;
 
-   }).catch(function(error){
-       console.log(error);
-   })
-} catch (error) {
-    return error.response;
-  }
+//    }).catch(function(error){
+//        console.log(error);
+//    })
+// } catch (error) {
+//     return error.response;
+//   }
+
+// }
+async function getUser(){
+      store.dispatch("useraxios").then(res =>{
+         console.log(res);
+         users = res;
+      })
+    //   let c =await Promise.all(b);
+// let x =store.s?\tate.user;
 
 }
 getUser()
-</script>
+</script>   

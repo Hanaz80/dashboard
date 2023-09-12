@@ -4,11 +4,14 @@
     <div>
      
       <h4 >Wise</h4>
+      
       <nav id="navbar-example3" class="navbar  flex-column align-items-stretch p-3">
         <div>
-          <img class="image" src="../assets/profile2.jpg" alt="">
+          <img class="image mt-3 mb-1" src="../assets/profile2.jpg" alt="">
           <p>Louis Carter</p>
-          <button v-on:click="Edit()" class="btn btx" disabled >Edit</button>
+          <div>
+          <button v-on:click="Edit()" class="btn btx px-2 py-0 mb-5  text-center" disabled >Edit</button>
+          </div>
         </div>
         <div class="ms-5">
         <ul class="navbar-nav">
@@ -69,17 +72,25 @@
     </div>
     <div class="footer d-flex justify-content-center">
       <a href="#">Light</a>
-          <div class="form-check form-switch mx-2" v-on:click="toggleDarkLight()">
-           <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-           </div>
+           <!-- <input class="form-check-input shadow-none" type="checkbox" id="flexSwitchCheckDefault" > -->
+           <button class="btn py-0 px-1 mx-2 shadow-none btx" v-on:click="toggleDarkLight()">
+             <div class="d-flex">
+              <i class="bi bi-brightness-low-fill" ></i>
+              <i class="bi bi-record-fill px-0 py-0" style="color:yellow !important"></i>
+
+
+             </div>
+           </button>
       <a href="#">Dark</a>
     </div>
   </div>
 </div>
 </template>
 <script setup>
+import { useStore } from 'vuex'
 import { useRouter } from 'vue-router';
 const router = useRouter()
+const store = useStore()
 function Dashboard(){
   return router.push('/dashboard')
 }
@@ -102,8 +113,8 @@ function logout(){
   return router.push('/')
 }
 function toggleDarkLight() {
-  let body = document.getElementById("body");
-  let currentClass = body.className;
-  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  // store.dispatch('asyncIncrement')
+  store.dispatch('darkmode')
 }
+
 </script>
