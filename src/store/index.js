@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default createStore({
   state: {
-    classLight:"light-mode",
+    // classLight:"light-mode",
     classDark:"dark-mode",
     user:[]
    
@@ -27,17 +27,6 @@ export default createStore({
    darkmode(context){
     return context.commit('darkmode')
    },
-//    useraxios(context) {
-//     axios
-//     .get("http://localhost:8080/jsonusers/index.json")
-//     .then(response => {
-//       return context.commit('setUsers',response.data)
-
-        
-//     })            
-// },
-
-
 useraxios() {
   return new Promise((resolve, reject) => {
     

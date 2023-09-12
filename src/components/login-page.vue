@@ -21,7 +21,7 @@
     <a href="#" class="float-end bb" >Forgot?</a>
     </div>
     <div class="text-center">
-    <button type="button" v-on:click="Login()" class="btn ">LOGIN</button>
+    <button type="button" v-on:click="Login()" class="btn shadow-none">LOGIN</button>
     
     </div>
     </form>
@@ -31,28 +31,43 @@
 
 </template>
 <script setup>
-import { ref } from 'vue'
 import { useRouter } from 'vue-router';
+import {useToast} from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
 const router = useRouter()
-let email = ref();
-let password =ref();
+const $toast =useToast();
+let email = ""
+let password ="";
 
 
 function Login(){ 
 
-let myEmail='hz@gmail.com';
+let myEmail='admin';
 let myPass =1234;
 
+if(!email && !password){
+  $toast.open({
+    message:"لطفا نام کاربری و پسورد خود را وارد ",
+    type:'default',
+    position:"top-right"
+  });
+  return false;
+}
 
-
-if(myEmail==email.value && myPass==password.value) {
+if(myEmail==email && myPass==password) {
 localStorage.setItem( "email", myEmail)
 
 return   router.push("/dashboard");
 
 }
 
+  $toast.open({
+    message:"نام کاربری و رمز عبور شما اشتباه است ",
+    type:'error',
+    position:"top-right"
+  });
 
+return;
 
 
 }   

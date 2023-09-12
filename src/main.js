@@ -13,13 +13,15 @@ import '@fortawesome/fontawesome-free/js/all.js'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-
+import ToastPlugin from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-bootstrap.css';
 
 
 import "bootstrap-icons/font/bootstrap-icons.css";
+
 createApp(App)
 .use(store)
 .use(router)
+.use(ToastPlugin)
 .use(VueAxios, axios)
-
 .mount('#app')

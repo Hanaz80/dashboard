@@ -29,29 +29,8 @@
           <li class="nav-item dropdown">
             <div class="d-flex">
               <i class="bi bi-file-earmark-text-fill mt-2" ></i>
-              <button v-on:click="activity()" class="btn" style="color:white ; border: none;" >
+              <button v-on:click="activity()" class="btn shadow-none" style="color:white ; border: none;" >
                Activity
-            </button>
-            </div>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <div class="d-flex">
-              <i class="bi bi-calendar2-date-fill mt-2"></i>
-              <button v-on:click="schedule()" class="btn" style="color:white; border: none;" disabled>
-                Schedule
-            </button>
-            </div>
-           
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <div class="d-flex">
-              <i class="bi bi-toggles mt-2"></i>
-              <button v-on:click="setting()" class="btn" style="color:white ;border: none;" disabled>
-                Setting
             </button>
             </div>
           </li>
@@ -72,7 +51,6 @@
     </div>
     <div class="footer d-flex justify-content-center">
       <a href="#">Light</a>
-           <!-- <input class="form-check-input shadow-none" type="checkbox" id="flexSwitchCheckDefault" > -->
            <button class="btn py-0 px-1 mx-2 shadow-none btx" v-on:click="toggleDarkLight()">
              <div class="d-flex">
               <i class="bi bi-brightness-low-fill" ></i>
@@ -102,12 +80,6 @@ function activity(){
 function Edit(){
   return   router.push('/edit');
 
-}
-function schedule(){
-  return router.push('/schedule')
-}
-function setting(){
-  return router.push('/setting')
 }
 function logout(){
   return router.push('/')

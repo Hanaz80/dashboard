@@ -56,25 +56,31 @@
         </div>
         <div class="d-flex mm justify-content-center">
           <div class="cd3" id="cd3">
-            <p>Mon</p>
-            <h6>2</h6>
+            <div class="p-2">
+              <p>Mon</p>
+               <h6 style="margin-top:-15px">2</h6>
+            </div>
+            
           </div>
           <div id="cd3" class="cd2">
-            <p>Tue</p>
-            <h6>3</h6>
+            <div class="p-2 ">
+              <p>Tue</p>
+            <h6 style="margin-top:-15px">3</h6>
+            </div>
           </div>
           <div id="cd3" class="cd3">
-            <p>Wed</p>
-            <h6>4</h6>
+           <div class="p-2">
+            <p >Wed</p>
+            <h6 style="margin-top:-15px">4</h6>
+           </div>
           </div>
         </div>
-        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
          <div class="d-flex" >
           <div style="border-right:1px solid black; padding-right: 40px;">
         <h1 class="ms-4">23%</h1>
           </div>
-          <div class="ms-auto me-4">
-            <h6>10%</h6>
+          <div class="ms-auto me-4 ">
+            <h6>-10%</h6>
             <p class="p2">Since last day</p>
           </div>
          </div>
